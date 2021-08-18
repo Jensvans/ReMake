@@ -28,7 +28,7 @@ def main():
 
   if number == 2:
     prgrm = input("name of program: ")
-    print("sudo apt-get install"+ prgrm())
+    Execute("sudo apt-get install"+ prgrm())
 
 if __name__ == '__main__':
     main()
