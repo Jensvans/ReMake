@@ -1,8 +1,9 @@
-import bash
+import os
 
-bash.call_update()
+def Execute(cmd):
+  print(cmd)
+  for line in os.popen(cmd).read().split("\n"):
+    print("==> " + line.strip())
 
-print("update")
-
-
-print("upgrade")
+Execute("sudo apt-get update")
+Execute("sudo apt-get upgrade")
