@@ -13,6 +13,8 @@ __status__ = "Development"
 def main():
   print("Type 1 to update the os")
   print("Type 2 to install a program")
+  print("Type 3 to reboot")
+  print("Type 4 to shutdown")
   number = input("Type a mumber: ")
 
 
@@ -29,6 +31,13 @@ def main():
   if number == 2:
 
     Execute("sudo apt-get install"+ input("name of progrom: "))
+
+  if number == 3:
+    Execute("sudo reboot")
+
+  if number == 4:
+     Execute("sudo shutdown")
+
 
 if __name__ == '__main__':
     main()
