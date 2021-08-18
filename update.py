@@ -1,7 +1,6 @@
-sudo apt update
+bash.call_update()
 
 print("update")
 
-sudo apt upgrade -y
 
 print("upgrade")
