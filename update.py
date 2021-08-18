@@ -27,8 +27,8 @@ def main():
     Execute("sudo apt-get upgrade")
 
   if number == 2:
-    prgrm = input("name of program")
-    print("sudo apt-get install"+ prgrm)
+    prgrm = input("name of program: ")
+    print("sudo apt-get install"+ prgrm())
 
 if __name__ == '__main__':
     main()
