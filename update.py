@@ -23,3 +23,6 @@ def main():
     if number == 1:
       Execute("sudo apt-get update")
       Execute("sudo apt-get upgrade")
+
+if __name__ == '__main__':
+    main()
