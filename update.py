@@ -29,8 +29,8 @@ def main():
     Execute("sudo apt-get upgrade")
 
   if number == 2:
-
-    Execute("sudo apt-get install"+ input("name of progrom: "))
+    prgm = input("name of progrom: ")
+    Execute("sudo apt-get install{1}".format(prgm))
 
   if number == 3:
     Execute("sudo reboot")
