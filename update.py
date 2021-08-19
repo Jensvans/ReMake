@@ -30,7 +30,7 @@ def main():
 
   if number == 2:
     prgm = input("name of progrom: ")
-    Execute("sudo apt-get install{1}".format(prgm))
+    Execute("sudo apt-get install{}".format(prgm))
 
   if number == 3:
     Execute("sudo reboot")
