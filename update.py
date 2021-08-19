@@ -29,7 +29,7 @@ def main():
     Execute("sudo apt-get upgrade")
 
   if number == 2:
-    prgm = input("name of progrom: ")
+    prgm = input("type the name of the progrom between"": ")
     Execute("sudo apt-get install "+ prgm)
 
   if number == 3:
