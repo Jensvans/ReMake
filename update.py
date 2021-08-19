@@ -30,8 +30,7 @@ def main():
 
   if number == 2:
     prgm = input("type the name of the progrom between"": ")
-    prgm_str = ""%prgm
-    Execute("sudo apt-get install "+ prgm_str)
+    Execute(f"sudo apt-get install {prgm}")
 
   if number == 3:
     Execute("sudo reboot")
