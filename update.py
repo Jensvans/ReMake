@@ -15,6 +15,7 @@ def main():
   print("Type 2 to install a program")
   print("Type 3 to reboot")
   print("Type 4 to shutdown")
+  print("Type 5 to install teamviewer")
   number = input("Type a mumber: ")
 
 
@@ -38,6 +39,10 @@ def main():
   if number == 4:
      Execute("sudo shutdown")
 
+  if number == 5:
+    Execute("wget -P /home/pi/Downloads https://download.teamviewer.com/download/linux/teamviewer-host_armhf.deb")
+    Execute("sudo apt-get install /home/pi/Downloads/teamviewer-host_armhf.deb")
+    Execute("sudo teamviewer setup")
 
 if __name__ == '__main__':
     main()
