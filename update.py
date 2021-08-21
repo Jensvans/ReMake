@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-
+A simpel progam to update a raspberry pi
 """
 
 #imports
